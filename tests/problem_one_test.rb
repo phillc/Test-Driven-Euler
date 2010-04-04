@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class ProblemOneTest < Test::Unit::TestCase
-  context "fixnum" do
+  context "Integer" do
     context "9" do
       setup do
         @number = 9
@@ -36,7 +36,7 @@ class ProblemOneTest < Test::Unit::TestCase
       end
       
       should "calculate the sum of all the natural numbers below 10 that are multiples of 3 or 5" do
-        assert_equal 23, @problem.calculate(10)
+        assert_equal 23, @problem.solve(10)
       end
     end
   end

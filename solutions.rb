@@ -9,6 +9,6 @@ end
 problems.each do |problem|
   puts "*" * 80
   puts problem.describe
-  puts "answer: #{problem.calculate}"
+  puts "answer: #{problem.solve}"
   puts "*" * 80
 end
