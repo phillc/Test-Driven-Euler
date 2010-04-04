@@ -1,11 +1,12 @@
 class Fibonacci
-  attr_accessor :sequence
+  attr_accessor :series
   def initialize
-    @sequence = [1,2]
+    @series = [0,1]
   end
   
   def get_next
-    @sequence << sequence[-1] + sequence[-2]
-    @sequence.last
+    @series << @series[0] + @series[1]
+    @series.shift
+    @series.last
   end
 end

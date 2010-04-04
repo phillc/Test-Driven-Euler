@@ -8,12 +8,13 @@ class ProblemTwo
   end
   
   def calculate(not_exceed=4000000)
+    numbers = []
+    while true do
+      number = @fibonacci.get_next
+      break if number > not_exceed
+      numbers << number if number.even?
+    end
     
-  end
-  
-  private
-  def get_up_to
-    number = @fibonacci.
-    return 
+    numbers.inject {|sum, n| sum + n }
   end
 end
